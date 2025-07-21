@@ -18,8 +18,3 @@ def get_character_count(text):
         else:
             character_count[character] += 1
     return character_count
-
-def sort_dictionary(dictionary):
-    sorted_dictionary = sorted(dictionary.items(), key= lambda item: item[1], reverse=True)
-    return sorted_dictionary
-# where value == character -> add to list & value++ 
