@@ -1,10 +1,13 @@
 import sys
 
+# File for all the random
+
 def print_report(*args):
     number_of_words = args[0]
     list_of_characters = args[1]
+    name_of_the_book = args[2]
     print("============ BOOKBOT ============")
-    print("Analyzing book found at books/frankenstein.txt...")
+    print(f"Analyzing book found at {name_of_the_book}...")
     print("----------- Word Count ----------")
     print(f"Found {number_of_words} total words")
     print("--------- Character Count -------")
@@ -15,8 +18,9 @@ def print_report(*args):
 
 def get_sys_args():
     if len(sys.argv) > 1:
-        path = sys.argv[1]
-        return path
+        #path = sys.argv[1]
+        # return path
+        return sys.argv[1:]
     else:
         print("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
