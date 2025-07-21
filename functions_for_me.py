@@ -1,6 +1,6 @@
 import sys
 
-# File for all the random
+# File for all the random functions
 
 def print_report(*args):
     number_of_words = args[0]
@@ -18,9 +18,11 @@ def print_report(*args):
 
 def get_sys_args():
     if len(sys.argv) > 1:
-        #path = sys.argv[1]
-        # return path
         return sys.argv[1:]
     else:
         print("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
+
+def sort_dict_by_value_desc(dictionary):
+    sorted_items = sorted(dictionary.items(), key=lambda item: item[1], reverse=True)
+    return sorted_items
