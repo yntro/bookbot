@@ -2,7 +2,9 @@ from stats import *
 from functions import *
 
 def main():
-    path = "./books/frankenstein.txt"
+    
+    path = get_
+
     text = get_book_text(path)
     number_of_words = get_word_count(text)
     character_count = get_character_count(text)
